@@ -1,0 +1,37 @@
+@charset "UTF-8";
+*{
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  outline: none;
+}
+html,body{ height: 100%;}
+ul,ol{ list-style: none;}
+
+table{
+  margin: 100px auto;
+}
+
+/* 첫번째 table 속성의 타이틀 영역을 제외한 hover효과 주기 */
+tr:not(:first-child):hover{
+  background: #bed8ff;
+}
+
+tr:nth-child(even){
+  background: #f2f2f2;
+}
+th{
+  background: #222222;
+  color: #ffffff;
+}
+th:nth-child(odd){
+  background: #444444;
+}
+th,td{
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+}
+/* 스크립트에서 사용하기 위한 class */
+.hover{
+  background: #bed8ff;
+}
